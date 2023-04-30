@@ -1,7 +1,7 @@
 #ImPact
 ImPact is the upgraded version of pervious website cloning tool Site-Map by @Anil Shrestha.
-This tool is made to represemt the risk of having low end server. It simply shutfown's
-the real server by performing DOS Attack and hosts a clone of it. 
+This tool is made to represemt the risk of having low end server. It simply shutdown's
+the real server by performing DOS Attack and deploys a clone of it. 
 
 This tool is only made for educational andfor awareness purpose, If you performed
 Malicious activity or attack using it, I won'tbe responsible for that.

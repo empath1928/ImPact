@@ -45,7 +45,7 @@ if [ "$lolcat" == "lolcat" ]
 then 
     echo -e ${LIGHT_GREEN}"_/ Installed"
 else 
-echo -e ${LIGHT_YELLOW}"Downloading Lolcat" ; apt-get install lolcat
+echo -e ${LIGHT_YELLOW}"Downloading Lolcat" ; apt-get install lolcat -y
 fi 
 
 #Pip
@@ -55,7 +55,7 @@ if [ "$pip" == "pip" ]
 then 
     echo -e ${LIGHT_GREEN}"_/ Installed"
 else 
-echo -e ${LIGHT_YELLOW}"Downloading PIP" ; apt-get install pip
+echo -e ${LIGHT_YELLOW}"Downloading PIP" ; apt-get install pip -y
 fi 
 
 #Pyngrok
@@ -65,7 +65,17 @@ if [ "$pyngrok" == "pyngrok" ]
 then 
     echo -e ${LIGHT_GREEN}"_/ Installed"
 else 
-echo -e ${LIGHT_YELLOW}"Downloading PyNgrok" ; pip install pyngrok
+echo -e ${LIGHT_YELLOW}"Downloading PyNgrok" ; pip install pyngrok -y
+fi 
+
+#xterm
+echo -e ${LIGHT_CYAN}"Checking PyNgrok" ; sleep 0.5 
+xterm=$(which xterm | grep -oP "xterm")
+if [ "$xterm" == "xterm" ]
+then 
+    echo -e ${LIGHT_GREEN}"_/ Installed"
+else 
+echo -e ${LIGHT_YELLOW}"Downloading PyNgrok" ; apt-get install xterm -y 
 fi 
 
 #SSG
@@ -75,7 +85,7 @@ if [ "$ssh" == "ssh" ]
 then 
     echo -e ${LIGHT_GREEN}"_/ Installed"
 else 
-echo -e ${LIGHT_YELLOW}"Downloading SSH" ; apt-get install ssh
+echo -e ${LIGHT_YELLOW}"Downloading SSH" ; apt-get install ssh -y
 fi 
 
 echo ; echo -e ${LIGHT_YELLOW}

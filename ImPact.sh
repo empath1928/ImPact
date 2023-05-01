@@ -289,7 +289,7 @@ then
     if [[ ( "$dos_option" == "Y" || "$dos_option" == "y" ) ]]
     then 
         echo -e ${LIGHT_RED}
-        str="Number of sockets you wanna use ( skip for default : 500 ) ? ▄︻̷̿┻̿═━一 " 
+        str="Number of sockets you wanna use ( skip for default : 500 ) ? Y/n ▄︻̷̿┻̿═━一 " 
         for ((i=0; i<${#str}; i++)); do
         echo -n "${str:$i:1}"
         sleep 0.03

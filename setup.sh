@@ -69,13 +69,13 @@ echo -e ${LIGHT_YELLOW}"Downloading PyNgrok" ; pip install pyngrok -y
 fi 
 
 #xterm
-echo -e ${LIGHT_CYAN}"Checking PyNgrok" ; sleep 0.5 
+echo -e ${LIGHT_CYAN}"Checking xterm" ; sleep 0.5 
 xterm=$(which xterm | grep -oP "xterm")
 if [ "$xterm" == "xterm" ]
 then 
     echo -e ${LIGHT_GREEN}"_/ Installed"
 else 
-echo -e ${LIGHT_YELLOW}"Downloading PyNgrok" ; apt-get install xterm -y 
+echo -e ${LIGHT_YELLOW}"Downloading xterm" ; apt-get install xterm -y 
 fi 
 
 #SSG
